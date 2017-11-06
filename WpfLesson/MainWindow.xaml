@@ -7,5 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <TextBlock>
+            <TextBlock.HorizontalAlignment>Center</TextBlock.HorizontalAlignment>
+            <TextBlock.VerticalAlignment>Center</TextBlock.VerticalAlignment>
+            <TextBlock.FontSize>72</TextBlock.FontSize>
+            <TextBlock.Text>Hello, WPF!</TextBlock.Text>
+        </TextBlock>
     </Grid>
 </Window>

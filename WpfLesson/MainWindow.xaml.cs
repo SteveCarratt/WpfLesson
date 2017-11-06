@@ -23,14 +23,6 @@ namespace WpfLesson
         public MainWindow()
         {
             InitializeComponent();
-            var grid = Content as Grid;
-            grid.Children.Add(new TextBlock()
-                                       {
-                                           VerticalAlignment = VerticalAlignment.Center,
-                                           HorizontalAlignment = HorizontalAlignment.Center,
-                                           FontSize = 72,
-                                           Text = "Hello, WPF!"
-                                       });
         }
     }
 }
