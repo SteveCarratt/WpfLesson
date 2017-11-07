@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:WpfLesson"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="MyStyle" TargetType="Border">
+            <Style.Setters>
+                <Setter Property="BorderBrush" Value="Red"></Setter>
+                <Setter Property="BorderThickness" Value="2"></Setter>
+            </Style.Setters>
+        </Style>
     </Application.Resources>
 </Application>

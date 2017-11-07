@@ -7,11 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" MouseEnter="MainWindow_OnMouseEnter" MouseLeave="MainWindow_OnMouseLeave">
     <Grid>
-        <TextBlock>
-            <TextBlock.HorizontalAlignment>Center</TextBlock.HorizontalAlignment>
-            <TextBlock.VerticalAlignment>Center</TextBlock.VerticalAlignment>
-            <TextBlock.FontSize>72</TextBlock.FontSize>
-            <TextBlock.Text>Hello, WPF!</TextBlock.Text>
-        </TextBlock>
+        <local:MyCustomContent>
+            <TextBlock>
+                <TextBlock.HorizontalAlignment>Center</TextBlock.HorizontalAlignment>
+                <TextBlock.VerticalAlignment>Center</TextBlock.VerticalAlignment>
+                <TextBlock.FontSize>72</TextBlock.FontSize>
+                <TextBlock.Text>Hello, WPF!</TextBlock.Text>
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Style.Setters>
+                            <Setter Property="Foreground" Value="Blue"></Setter>
+                        </Style.Setters>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </local:MyCustomContent>
     </Grid>
 </Window>
