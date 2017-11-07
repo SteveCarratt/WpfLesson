@@ -10,5 +10,21 @@
                 <Setter Property="BorderThickness" Value="2"></Setter>
             </Style.Setters>
         </Style>
+        
+        <Style x:Key="SayWhaaat" TargetType="UserControl">
+            <Style.Setters>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="UserControl">
+                            <WrapPanel>
+                                <Border Style="{StaticResource MyStyle}">
+                                    <ContentControl Content="{TemplateBinding Content}"></ContentControl>
+                                </Border>
+                            </WrapPanel>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style.Setters>
+        </Style>
     </Application.Resources>
 </Application>
