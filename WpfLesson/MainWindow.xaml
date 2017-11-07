@@ -23,7 +23,21 @@
             </TextBlock>
         </local:MyCustomContent>
         <ListBox ItemsSource="{Binding .}">
-          
+          <ListBox.Template>
+              <ControlTemplate>
+                  <Border BorderBrush="Red" BorderThickness="2">
+                      <ItemsPresenter></ItemsPresenter>
+                  </Border>
+              </ControlTemplate>
+          </ListBox.Template>
+            <ListBox.Resources>
+                <DataTemplate DataType="{x:Type local:Type1}">
+                    <TextBlock>Steve</TextBlock>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type local:Type2}">
+                    <TextBlock>Gurmit</TextBlock>
+                </DataTemplate>
+            </ListBox.Resources>
         </ListBox>
     </WrapPanel>
 </Window>
