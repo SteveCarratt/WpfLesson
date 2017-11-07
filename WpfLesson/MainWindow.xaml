@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfLesson"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" MouseEnter="MainWindow_OnMouseEnter" MouseLeave="MainWindow_OnMouseLeave">
-    <Grid>
+    <WrapPanel>
         <local:MyCustomContent>
             <TextBlock>
                 <TextBlock.HorizontalAlignment>Center</TextBlock.HorizontalAlignment>
@@ -22,5 +22,8 @@
                 </TextBlock.Style>
             </TextBlock>
         </local:MyCustomContent>
-    </Grid>
+        <ListBox ItemsSource="{Binding .}">
+          
+        </ListBox>
+    </WrapPanel>
 </Window>

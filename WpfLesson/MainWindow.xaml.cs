@@ -23,10 +23,13 @@ namespace WpfLesson
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new []{"Item1", "Item2", "Item3"};
         }
 
         private void MainWindow_OnMouseEnter(object sender, MouseEventArgs e) { Background = Brushes.DarkSalmon; }
 
         private void MainWindow_OnMouseLeave(object sender, MouseEventArgs e) { Background = Brushes.White; }
     }
+
+
 }
